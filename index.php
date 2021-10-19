@@ -49,7 +49,7 @@
             </div>
             <br>
             <br>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="sign_btn" href="/public/view/Dashboard.php">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="sign_btn">
                 Sign In
             </button>
         </div>
@@ -61,7 +61,7 @@
 
 <script type="text/javascript">
     document.getElementById("sign_btn").onclick = function () {
-        window.location.href =  "view/Dashboard.php";
+        window.location.href =  "view/main.php";
     };
 </script>
 
