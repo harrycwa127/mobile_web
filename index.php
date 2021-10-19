@@ -33,9 +33,6 @@
     <img src="public/img/icon.png" alt="icon" width="300" height="300" style="text-align: center;">
     <h1 style="text-align: center;">Login</h1>
     <br>
-    <!-- <?php 
-    include("public/php/routing.php");
-    ?> -->
     <br>
     <div class="">
         <div style="text-align:center">

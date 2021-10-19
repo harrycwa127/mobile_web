@@ -24,4 +24,7 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 
+// <?php 
+// include("public/php/routing.php");
+// ?>
 ?>
