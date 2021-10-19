@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <body background="./public/images/bg.jpg">
     <title>Mobile Web</title>
     
     <!-- Add to homescreen for Chrome on Android -->
@@ -29,10 +28,10 @@
     }
 </style>
 
-
+<body background="./public/images/bg.jpg">
     <br>
     <center><img src="public/images/icon.png" alt="icon" width="300" height="300" style="text-align: center;"></center>
-    <h2 style="text-align: center;">Storytelling Login</h2>
+    <h3 style="text-align: center;">Storytelling Login</h3>
     <!-- <?php 
     include("public/php/routing.php");
     ?> -->
