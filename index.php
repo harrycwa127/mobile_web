@@ -32,9 +32,6 @@
     <br>
     <center><img src="public/images/icon.png" alt="icon" width="300" height="300" style="text-align: center;"></center>
     <h3 style="text-align: center;">Storytelling Login</h3>
-    <!-- <?php 
-    include("public/php/routing.php");
-    ?> -->
     <br>
     <div class="">
 
@@ -52,7 +49,7 @@
             </div>
             <br>
             <br>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="sign_btn">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="sign_btn" href="/public/view/Dashboard.php">
                 Sign In
             </button>
         </div>

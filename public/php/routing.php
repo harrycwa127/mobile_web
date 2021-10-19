@@ -26,7 +26,4 @@ function getList(){
 
   $conn->close();
 }
-// <?php 
-// include("public/php/routing.php");
-// ?>
 ?>
