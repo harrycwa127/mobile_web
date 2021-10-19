@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mobile Web</title>
-</head>
-<!-- Add to homescreen for Chrome on Android -->
+    <title>Mobile Web</title>
+    
+    <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="./public/images/icon.png">
 
@@ -18,6 +18,8 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <link rel="shortcut icon" href="./public/images/icon.png">
+</head>
+
 <style>    
     .center {
         margin: auto;
@@ -26,23 +28,27 @@
         padding: 10px;
     }
 </style>
+<body>
+    <br>
+    <img src="public/img/icon.png" alt="icon" width="300" height="300" style="text-align: center;">
+    <h1 style="text-align: center;">Login</h1>
+    <br>
+    <!-- <?php 
+    include("public/php/routing.php");
+    ?> -->
+    <br>
+    <div class="">
+        <div style="text-align:center">
+            <div><h3>Username</h3><input class="mdl-textfield__input" type="text" placeholder="username"></input></div>
 
-<br>
-<img src="public/img/icon.png" alt="icon" width="300" height="300" style="text-align: center;">
-<h1 style="text-align: center;">Login</h1>
-<br>
-<br>
-<div class="">
-    <div style="text-align:center">
-        <div><h3>Username</h3><input class="mdl-textfield__input" type="text" placeholder="username"></input></div>
+            <div><h3>Password</h3><input class="mdl-textfield__input" type="text" placeholder="passowrd"></input></div>
 
-        <div><h3>Password</h3><input class="mdl-textfield__input" type="text" placeholder="passowrd"></input></div>
-
-        <br>
-        <br>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="sign_btn">Sign In</button>
+            <br>
+            <br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="sign_btn">Sign In</button>
+        </div>
     </div>
-</div>
+
 
 </body>
 </html>
