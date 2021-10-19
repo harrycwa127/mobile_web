@@ -11,6 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <link rel="apple-touch-icon-precomposed" href="./public/images/icon.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -30,7 +31,7 @@
 
 <body background="./public/images/bg.jpg">
     <br>
-    <center><img src="public/images/icon.png" alt="icon" width="300" height="300" style="text-align: center;"></center>
+    <center><img src="public/images/icon.png" alt="icon" width="200" height="200" style="text-align: center;"></center>
     <h3 style="text-align: center;">Storytelling Login</h3>
     <br>
     <div class="">
