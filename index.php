@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <body background="./public/images/bg.jpg">
     <title>Mobile Web</title>
     
     <!-- Add to homescreen for Chrome on Android -->
@@ -19,7 +20,6 @@
 
     <link rel="shortcut icon" href="./public/images/icon.png">
 </head>
-
 <style>    
     .center {
         margin: auto;
@@ -28,21 +28,34 @@
         padding: 10px;
     }
 </style>
-<body>
+
+
     <br>
-    <img src="public/img/icon.png" alt="icon" width="300" height="300" style="text-align: center;">
-    <h1 style="text-align: center;">Login</h1>
-    <br>
+    <center><img src="public/images/icon.png" alt="icon" width="300" height="300" style="text-align: center;"></center>
+    <h2 style="text-align: center;">Storytelling Login</h2>
+    <!-- <?php 
+    include("public/php/routing.php");
+    ?> -->
     <br>
     <div class="">
+
+
+       
         <div style="text-align:center">
-            <div><h3>Username</h3><input class="mdl-textfield__input" type="text" placeholder="username"></input></div>
-
-            <div><h3>Password</h3><input class="mdl-textfield__input" type="text" placeholder="passowrd"></input></div>
-
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="username-label">
+                <label class="mdl-textfield__label" for="username">username</label>
+            </div>
+            <br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="pw-label">
+                <label class="mdl-textfield__label" for="pw">password</label>
+            </div>
             <br>
             <br>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="sign_btn">Sign In</button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Sign In
+            </button>
         </div>
     </div>
 
