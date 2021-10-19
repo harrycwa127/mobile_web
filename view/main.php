@@ -53,7 +53,7 @@
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Dashboard</span>
+          <span class="mdl-layout-title" id="page_title">Dashboard</span>
           <div class="mdl-layout-spacer"></div>
         </div>
       </header>
@@ -68,7 +68,7 @@
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
           <a class="mdl-navigation__link" href="javascript:dashboard_content();"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Dashboard</a>
           <a class="mdl-navigation__link" href="javascript:about_us_content();"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>About Us</a>
-          <a class="mdl-navigation__link" href="javascript:list_content();"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">sort</i>Ranked List</a>
+          <a class="mdl-navigation__link" href="javascript:list_content();"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">sort</i>Rank List</a>
           <div class="mdl-layout-spacer"></div>
           <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
@@ -89,8 +89,10 @@
 
 <script type="text/javascript">
       var main = document.getElementById("content");
+      var title = document.getElementById("page_title");
       
       function dashboard_content(){
+        title.innerHTML="Dashboard";
         main.innerHTML = `
           <?php
             include('dashboard.php');
@@ -99,6 +101,7 @@
       }
 
       function about_us_content(){
+        title.innerHTML="About Us";
         main.innerHTML = `          
           <?php
             include('about_us.php');
@@ -107,6 +110,8 @@
       }
 
       function list_content(){
+        title.innerHTML="Rank List";
+
         main.innerHTML = `
           <?php
           include('list.php');
