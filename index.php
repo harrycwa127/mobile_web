@@ -53,7 +53,7 @@
             </div>
             <br>
             <br>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="sign_btn">
                 Sign In
             </button>
         </div>
