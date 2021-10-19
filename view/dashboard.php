@@ -53,7 +53,7 @@
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Home</span>
+          <span class="mdl-layout-title">Dashboard</span>
           <div class="mdl-layout-spacer"></div>
         </div>
       </header>
@@ -66,11 +66,11 @@
           </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Dashboard</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>About Us</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Ranked List</a>
+          <a class="mdl-navigation__link" href="javascript:dashboard_content();"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Dashboard</a>
+          <a class="mdl-navigation__link" href="javascript:about_us_content();"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>About Us</a>
+          <a class="mdl-navigation__link" href="javascript:list_content();"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">sort</i>Ranked List</a>
           <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+          <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
@@ -84,12 +84,22 @@
   </body>
 </html>
 
-<script>
+<script type="text/javascript">
       var main = document.getElementById("content");
-      main.innerHTML = `
-        <?php 
-          include('../public/php/routing.php');
-          getList();
-        ?>
+      
+      function dashboard_content(){
+        main.innerHTML = `<h1>DashBoard</h1>`;
+      }
+
+      function about_us_content(){
+        main.innerHTML = `<h1>About Us</h1>`;
+      }
+
+      function list_content(){
+        main.innerHTML = `
+          <?php
+          include('list.php');
+          ?>
         `;
+      }
 </script>
