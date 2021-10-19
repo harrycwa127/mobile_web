@@ -64,7 +64,7 @@
 
 <script type="text/javascript">
     document.getElementById("sign_btn").onclick = function () {
-        window.location.href =  "view/Dashboard.html";
+        window.location.href =  "view/Dashboard.php";
     };
 </script>
 
