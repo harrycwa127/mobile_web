@@ -7,12 +7,6 @@
       <th>VideoName</th>
 	  <th>DateTimes</th>
 	  <th>Comments</th>
-	  <th>
-	  <!-- Colored mini FAB button -->
-		<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
-			<i class="material-icons">add</i>
-		</button>
-	  </th>
     </tr>
   </thead>
   <tbody>
@@ -23,6 +17,14 @@
 	  <td>chan</td>
 	  <td>chn</td>
 	  <td>excellent</td>
+    <td>
+    <button class="mdl-button mdl-js-button">
+      <i class="material-icons">delete</i>
+    </button>
+    <button class="mdl-button mdl-js-button">
+      <i class="material-icons">edit</i>
+    </button>
+	  </td>
    </tr>
   <tr>
       <td class="mdl-data-table__cell">2</td>
@@ -31,6 +33,14 @@
 	  <td>he</td>
 	  <td>890000</td>
 	  <td>good</td>
+    <td>
+    <button class="mdl-button mdl-js-button">
+      <i class="material-icons">delete</i>
+    </button>
+    <button class="mdl-button mdl-js-button">
+      <i class="material-icons">edit</i>
+    </button>
+	  </td>
    </tr>
 
   </tbody>
