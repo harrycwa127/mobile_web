@@ -1,1 +1,4 @@
 <h1>About Us</h1>
+<div style="text-align: justify; font-size: large; line-height: 4.688632">
+    The Smart Storytelling App is a platform to let the user tell a story easily. User can select scenes, characters and sound effect provided by the system and record a video by moving the character and with narration to tell the story. They can also draw their own character and create their own scene. Our major target are children studying kindergarten and primary school as we think that our application can enhance their creativity which is very important in their stage, as well as be a leisure activity for children and their parent to play with. In this website, user can view the rank and comment of the created stories and reference from good work.
+</div>
