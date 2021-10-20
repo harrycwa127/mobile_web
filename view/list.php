@@ -11,35 +11,35 @@
   </thead>
   <tbody>
   <tr>
-      <td class="mdl-data-table__cell">1</td>
-      <td>kelvin</td>
-      <td>50</td>
+    <td class="mdl-data-table__cell">1</td>
+    <td>kelvin</td>
+    <td>50</td>
 	  <td>chan</td>
 	  <td>chn</td>
 	  <td>excellent</td>
     <td>
-    <button class="mdl-button mdl-js-button">
-      <i class="material-icons">delete</i>
-    </button>
-    <button class="mdl-button mdl-js-button">
-      <i class="material-icons">edit</i>
-    </button>
+      <button class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">delete</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">edit</i>
+      </button>
 	  </td>
    </tr>
   <tr>
-      <td class="mdl-data-table__cell">2</td>
-      <td>kkkk</td>
-      <td>0</td>
+    <td class="mdl-data-table__cell">2</td>
+    <td>kkkk</td>
+    <td>0</td>
 	  <td>he</td>
 	  <td>890000</td>
 	  <td>good</td>
     <td>
-    <button class="mdl-button mdl-js-button">
-      <i class="material-icons">delete</i>
-    </button>
-    <button class="mdl-button mdl-js-button">
-      <i class="material-icons">edit</i>
-    </button>
+      <button class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">delete</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">edit</i>
+      </button>
 	  </td>
    </tr>
 
