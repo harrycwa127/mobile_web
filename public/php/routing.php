@@ -10,20 +10,39 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+
 function getList(){
   global $conn;
   $sql = "SELECT * FROM video ORDER BY mark DESC";
   $result = $conn->query($sql);
-  
-  if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-      echo "VideoID: " . $row["videoID"]. " - Email: " . $row["email"]. " - Mark: " . $row["mark"]. " - VideoName: " . $row["videoName"]. " - DateTime: " . $row["dateTimes"]. " - Comments: " . $row["comments"].  "<br>";
-    }
-  } else {
-    echo "0 results";
+
+  return $result;
+  $conn->close();
+}
+
+function update($list){
+  global $conn;
+  $sql = "UPDATE video SET ";
+  foreach($list as $key=>$value) {
+    $sql .= $key . " = " . $value . ", "; 
   }
 
-  $conn->close();
+  if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+  } else {
+    echo "Error updating record: " . $conn->error;
+  }
+}
+
+function delete($id){
+  global $conn;
+
+  $sql = "DELETE FROM video WHERE id=".$id;
+
+  if ($conn->query($sql) === TRUE) {
+    echo "Record deleted successfully";
+  } else {
+    echo "Error deleting record: " . $conn->error;
+  }
 }
 ?>

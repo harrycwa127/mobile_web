@@ -10,42 +10,36 @@
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td class="mdl-data-table__cell">1</td>
-    <td>kelvin</td>
-    <td>50</td>
-	  <td>chan</td>
-	  <td>chn</td>
-	  <td>excellent</td>
-    <td>
-      <button class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">delete</i>
-      </button>
-      <button class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">edit</i>
-      </button>
-	  </td>
-   </tr>
-  <tr>
-    <td class="mdl-data-table__cell">2</td>
-    <td>kkkk</td>
-    <td>0</td>
-	  <td>he</td>
-	  <td>890000</td>
-	  <td>good</td>
-    <td>
-      <button class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">delete</i>
-      </button>
-      <button class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">edit</i>
-      </button>
-	  </td>
-   </tr>
-
-  </tbody>
-</table>
   <?php 
   include('../public/php/routing.php');
-  getList();
+  $result = getList();
+
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      // echo "VideoID: " . $row["videoID"]. " - Email: " . $row["email"]. " - Mark: " . $row["mark"]. " - VideoName: " . $row["videoName"]. " - DateTime: " . $row["dateTimes"]. " - Comments: " . $row["comments"].  "<br>";
+      echo '
+      <tr>
+        <td class="mdl-data-table__cell">' . $row["videoID"] . '</td>
+        <td>' . $row["email"] . '</td>
+        <td>' . $row["mark"] . '</td>
+        <td>' . $row["videoName"] . '</td>
+        <td>' . $row["dateTimes"] .'</td>
+        <td>' . $row["comments"] . '</td>
+        <td>
+          <button class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">edit</i>
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">delete</i>
+          </button>
+        </td>
+      </tr>
+      ';
+    }
+  } else {
+    echo "0 results";
+  }
   ?>
+  </tbody>
+</table>
