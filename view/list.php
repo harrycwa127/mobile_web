@@ -48,9 +48,9 @@
 <dialog class="mdl-dialog">
   <h4 class="mdl-dialog__title">Allow data collection?</h4>
   <div class="mdl-dialog__content">
-    <input>
+    <div>
       <label>mark</label>
-      <input></input>
+      <input></div>
     </div>
   </div>
   <div class="mdl-dialog__actions">
