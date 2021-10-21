@@ -46,14 +46,15 @@
 </table>
 
 <dialog class="mdl-dialog">
-    <h4 class="mdl-dialog__title">Allow data collection?</h4>
-    <div class="mdl-dialog__content">
-      <p>
-        Allowing us to collect data will let us get you the information you want faster.
-      </p>
+  <h4 class="mdl-dialog__title">Allow data collection?</h4>
+  <div class="mdl-dialog__content">
+    <input>
+      <label>mark</label>
+      <input></input>
     </div>
-    <div class="mdl-dialog__actions">
-      <button type="button" class="mdl-button">Agree</button>
-      <button type="button" class="mdl-button close">Disagree</button>
-    </div>
-  </dialog>
+  </div>
+  <div class="mdl-dialog__actions">
+    <button type="button" class="mdl-button">Agree</button>
+    <button type="button" class="mdl-button close">Disagree</button>
+  </div>
+</dialog>
