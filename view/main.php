@@ -76,6 +76,7 @@
       <main class="mdl-layout__content mdl-color--grey-100">
       <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" id="content">
+            
             <?php
               include('dashboard.php');
             ?>
@@ -93,17 +94,17 @@
       
       function dashboard_content(){
         title.innerHTML="Dashboard";
-        main.innerHTML = "<?php include('about_us.php'); ?>";
+        main.innerHTML = `<?php include('dashboard.php'); ?>`;
       }
 
       function about_us_content(){
         title.innerHTML="About Us";
-        main.innerHTML = "<?php include('about_us.php'); ?>";
+        main.innerHTML = `<?php include('about_us.php'); ?>`;
       }
 
       function list_content(){
         title.innerHTML="Rank List";
 
-        main.innerHTML = "<?php include('list.php'); ?>";
+        main.innerHTML = `<?php include('list.php'); ?>`;
       }
 </script>

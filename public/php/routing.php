@@ -22,10 +22,7 @@ function getList(){
 
 function update($list){
   global $conn;
-  $sql = "UPDATE video SET ";
-  foreach($list as $key=>$value) {
-    $sql .= $key . " = " . $value . ", "; 
-  }
+  $sql = "UPDATE video SET email=". $list['email']. ", mark=". $list['mark']. ", videoName=". $list['videoName']. ", dateTimes=". $list['dateTimes']. ", comments=". $list['comments']. "WHERE videoID=". $list['videoID'];
 
   if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";

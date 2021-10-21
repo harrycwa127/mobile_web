@@ -2,6 +2,7 @@
   <thead>
     <tr>
       <th class="mdl-data-table__cell">VideoID</th>
+      <th>Icon</th>
       <th>Email</th>
 	  <th>Marks</th>
       <th>VideoName</th>
@@ -17,10 +18,10 @@
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      // echo "VideoID: " . $row["videoID"]. " - Email: " . $row["email"]. " - Mark: " . $row["mark"]. " - VideoName: " . $row["videoName"]. " - DateTime: " . $row["dateTimes"]. " - Comments: " . $row["comments"].  "<br>";
       echo '
       <tr>
         <td class="mdl-data-table__cell">' . $row["videoID"] . '</td>
+        <td><img src="../public/images/dog.png" class="demo-avatar"></td>
         <td>' . $row["email"] . '</td>
         <td>' . $row["mark"] . '</td>
         <td>' . $row["videoName"] . '</td>
@@ -43,3 +44,16 @@
   ?>
   </tbody>
 </table>
+
+<dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Allow data collection?</h4>
+    <div class="mdl-dialog__content">
+      <p>
+        Allowing us to collect data will let us get you the information you want faster.
+      </p>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button">Agree</button>
+      <button type="button" class="mdl-button close">Disagree</button>
+    </div>
+  </dialog>
